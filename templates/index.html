@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ellams Phishing URL Scanner</title>
+</head>
+<body>
+    <h1>🔐 Ellams Phishing URL Detector</h1>
+    <form method="post">
+        <input type="text" name="url" placeholder="Enter a URL" required>
+        <button type="submit">Scan</button>
+    </form>
+    {% if prediction is not none %}
+        <h2>Result: {{ '🚨 Phishing Detected' if prediction == 1 else '✅ Legitimate URL' }}</h2>
+    {% endif %}
+</body>
+</html>
