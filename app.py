@@ -1,11 +1,13 @@
 import joblib
-from flask import Flask
-app = Flask(__name__), request, render_template
 import re
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
+
+# Load the trained model
 model = joblib.load("phishing_model.pkl")
 
+# Feature extraction function
 def extract_features(url):
     return [
         len(url),
@@ -18,6 +20,7 @@ def extract_features(url):
         int(any(word in url for word in ['verify', 'account', 'login', 'secure', 'update', 'check']))
     ]
 
+# Home route
 @app.route("/", methods=["GET", "POST"])
 def index():
     prediction = None
@@ -27,5 +30,4 @@ def index():
         prediction = model.predict([features])[0]
     return render_template("index.html", prediction=prediction)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# Note: Do not include app.run() — Gunicorn will handle it on Render
