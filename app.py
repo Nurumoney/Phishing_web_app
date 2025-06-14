@@ -1,5 +1,6 @@
 import joblib
-from flask import Flask, request, render_template
+from flask import Flask
+app = Flask(__name__), request, render_template
 import re
 
 app = Flask(__name__)
