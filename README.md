@@ -46,6 +46,9 @@ pip install -r requirements.txt
 # Run the app
 python app.py
 
+
+```
+
 ### 🌐 Live Demo
 ‎
 ‎Access the deployed app here:  
@@ -83,4 +86,15 @@ python app.py
 ‎---
 ‎
 ‎### 📁 Project Structure
-‎Phishing_web_app/ ├── app.py                 # Flask web server ├── phishing_model.pkl     # Trained ML model ├── requirements.txt       # List of Python dependencies ├── train_model.py         # Script used to train the model ├── templates/ │   └── index.html         # HTML frontend form └── README.md              # Project documentation
+
+
+Phishing_web_app/
+├── app.py                 # Flask web server
+├── phishing_model.pkl     # Trained ML model
+├── requirements.txt       # Python dependencies
+├── train_model.py         # Script to train the model
+├── phishing_site_urls.csv # Dataset for training (optional)
+├── templates/
+│   └── index.html         # HTML frontend form
+└── README.md              # Project documentation
+
