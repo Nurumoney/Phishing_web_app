@@ -45,3 +45,42 @@ pip install -r requirements.txt
 
 # Run the app
 python app.py
+
+### 🌐 Live Demo
+‎
+‎Access the deployed app here:  
+‎🔗 [https://phishing-web-app-qs2z.onrender.com](https://phishing-web-app-qs2z.onrender.com)
+‎
+‎---
+‎
+‎### 🚀 How to Use
+‎
+‎1. Open the link above in your browser.
+‎2. Enter a URL you want to check (e.g., `http://example.com`).
+‎3. Click **"Check URL"**.
+‎4. You'll see whether the URL is **Phishing** or **Legitimate**.
+‎
+‎⚠️ *Note:* On Render's free tier, the app might take ~30 seconds to wake up if it has been idle.
+‎
+‎---
+‎
+‎### 🧠 AI in Action
+‎
+‎- The model was trained using a dataset of phishing and legitimate URLs.
+‎- A `.pkl` file (`phishing_model.pkl`) is used to make real-time predictions.
+‎- The ML pipeline was created using Python’s `scikit-learn`.
+‎
+‎---
+‎
+‎### 🛠️ Technologies Used
+‎
+‎- Python
+‎- Flask
+‎- Scikit-learn
+‎- HTML/CSS (basic UI)
+‎- Hosted on Render
+‎
+‎---
+‎
+‎### 📁 Project Structure
+‎Phishing_web_app/ ├── app.py                 # Flask web server ├── phishing_model.pkl     # Trained ML model ├── requirements.txt       # List of Python dependencies ├── train_model.py         # Script used to train the model ├── templates/ │   └── index.html         # HTML frontend form └── README.md              # Project documentation
