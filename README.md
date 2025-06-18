@@ -54,8 +54,7 @@ python app.py
 ‎Access the deployed app here:  
 ‎🔗 [https://phishing-web-app-qs2z.onrender.com](https://phishing-web-app-qs2z.onrender.com)
 ‎
-‎---
-‎
+
 ‎### 🚀 How to Use
 ‎
 ‎1. Open the link above in your browser.
